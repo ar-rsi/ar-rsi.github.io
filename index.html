@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARRSI 2026 — Workshop on Autonomous Research and Recursive Self-Improvement</title>
+<meta name="description" content="The First Workshop on Autonomous Research and Recursive Self-Improvement (ARRSI), co-located with AACL-IJCNLP 2026 in Hengqin, China. Call for papers on autonomous research, AI for science, self-improving agents, evaluation, and safety.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="canonical" href="https://ar-rsi.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ARRSI 2026 — Workshop on Autonomous Research and Recursive Self-Improvement">
+<meta property="og:description" content="When can an agent be trusted as a research scientist? First ARRSI workshop at AACL-IJCNLP 2026, Hengqin, China — November 9 or 10, 2026.">
+<meta property="og:url" content="https://ar-rsi.github.io/">
+<meta property="og:image" content="https://ar-rsi.github.io/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="container masthead-inner">
+    <a class="wordmark" href="#top">ARRSI <span class="year">2026</span></a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#cfp">Call for Papers</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#organizers">Organizers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ======================= hero ======================= -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <p class="kicker">The First Workshop<span class="sep">·</span>AACL-IJCNLP 2026</p>
+      <h1>Autonomous Research <span class="amp">&amp;</span> Recursive Self&#8209;Improvement</h1>
+      <p class="hero-venue">Co-located with <strong>AACL-IJCNLP 2026</strong> in Hengqin, China — <strong>November 9 or 10, 2026</strong> <em>(day to be fixed)</em>.</p>
+      <div class="abstract">
+        <h2>Abstract</h2>
+        <p>AI agents are crossing a consequential threshold: from assisting with isolated research steps to running closed loops of literature search, hypothesis generation, coding, experimentation, evaluation, and revision. Autonomous research and recursive self-improvement may together form a direct path toward artificial superintelligence — turning a distant thought experiment into an urgent empirical and governance problem.</p>
+        <p><strong>ARRSI asks when an agent can be trusted as a research scientist:</strong> can it generate genuinely novel hypotheses, test them against the world, learn from failure, and convert evidence from its own work into measurable improvements in subsequent research — by updating prompts, memory, tools, workflows, training procedures, or parameters — without sacrificing validity, reproducibility, safety, or human control?</p>
+      </div>
+    </div>
+    <div class="hero-rail">
+      <figure class="figure">
+        <svg viewBox="0 0 400 330" role="img" aria-label="Diagram of the closed research loop: propose, implement, run, evaluate, revise — with evidence from evaluation updating the improver itself, which produces the next attempt.">
+          <defs>
+            <marker id="mInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+              <path d="M 0 1 L 9 5 L 0 9 z" class="fig-ink-fill" stroke="none"/>
+            </marker>
+            <marker id="mAcc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 1 L 9 5 L 0 9 z" class="fig-accent-fill" stroke="none"/>
+            </marker>
+          </defs>
+          <!-- loop arcs (clockwise), r=110 around (200,185), shifted up by 20 -->
+          <g fill="none" stroke-width="1.4" marker-end="url(#mInk)">
+            <path class="fig-ink loop-draw" pathLength="1" d="M 219.1 56.7 A 110 110 0 0 1 297.1 113.4"/>
+            <path class="fig-ink loop-draw" pathLength="1" d="M 308.9 149.7 A 110 110 0 0 1 279.1 241.4"/>
+            <path class="fig-ink loop-draw" pathLength="1" d="M 248.2 263.9 A 110 110 0 0 1 151.8 263.9"/>
+            <path class="fig-ink loop-draw" pathLength="1" d="M 120.9 241.4 A 110 110 0 0 1 91.1 149.7"/>
+            <path class="fig-ink loop-draw" pathLength="1" d="M 102.9 113.4 A 110 110 0 0 1 180.9 56.7"/>
+          </g>
+          <!-- recursive update: evaluate -> improver -> next proposal -->
+          <g fill="none" stroke-width="1.4" stroke-dasharray="4 4">
+            <path class="fig-accent loop-draw d2" pathLength="1" d="M 140 250 Q 152 214 172 191" marker-end="url(#mAcc)"/>
+            <path class="fig-accent loop-draw d2" pathLength="1" d="M 200 141 L 200 72" marker-end="url(#mAcc)"/>
+          </g>
+          <!-- improver box -->
+          <g class="loop-node n6">
+            <rect x="143" y="143" width="114" height="42" class="fig-paper-fill fig-accent" stroke-width="1.2"/>
+            <text x="200" y="160.5" text-anchor="middle" class="fig-label-text">the improver</text>
+            <text x="200" y="176" text-anchor="middle" class="fig-label-text" style="font-size:8.5px" opacity="0.62">prompts · tools · weights</text>
+            <text x="126" y="226" text-anchor="end" class="fig-label-accent">evidence</text>
+            <text x="208" y="102" text-anchor="start" class="fig-label-accent">next attempt</text>
+          </g>
+          <!-- nodes -->
+          <g stroke-width="1.4">
+            <g class="loop-node n1">
+              <circle cx="200" cy="55" r="4.5" class="fig-paper-fill fig-ink"/>
+              <text x="200" y="38" text-anchor="middle" class="fig-label-text">propose</text>
+            </g>
+            <g class="loop-node n2">
+              <circle cx="304.6" cy="131" r="4.5" class="fig-paper-fill fig-ink"/>
+              <text x="318" y="135" text-anchor="start" class="fig-label-text">implement</text>
+            </g>
+            <g class="loop-node n3">
+              <circle cx="264.7" cy="254" r="4.5" class="fig-paper-fill fig-ink"/>
+              <text x="276" y="271" text-anchor="start" class="fig-label-text">run</text>
+            </g>
+            <g class="loop-node n4">
+              <circle cx="135.3" cy="254" r="4.5" class="fig-paper-fill fig-ink"/>
+              <text x="124" y="271" text-anchor="end" class="fig-label-text">evaluate</text>
+            </g>
+            <g class="loop-node n5">
+              <circle cx="95.4" cy="131" r="4.5" class="fig-paper-fill fig-ink"/>
+              <text x="82" y="135" text-anchor="end" class="fig-label-text">revise</text>
+            </g>
+          </g>
+        </svg>
+        <figcaption><span class="fig-label">Figure 1</span> — The closed research loop. A system <em>self-improves</em> when evidence from earlier runs changes the system itself; <em>recursive</em> self-improvement repeats this, with the improved system contributing to its next update.</figcaption>
+      </figure>
+      <dl class="factlist">
+        <div><dt>Venue</dt><dd>AACL-IJCNLP 2026</dd></div>
+        <div><dt>Location</dt><dd>Hengqin, China</dd></div>
+        <div><dt>Date</dt><dd>Nov 9 or 10, 2026</dd></div>
+        <div><dt>Format</dt><dd>One day, in person</dd></div>
+        <div><dt>Submissions</dt><dd>OpenReview · double-blind</dd></div>
+        <div><dt>Edition</dt><dd>First</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= about ======================= -->
+<section class="block" id="about">
+  <div class="container">
+    <div class="block-head">
+      <span class="no">1</span>
+      <h2>About the Workshop</h2>
+      <span class="aside-note">Why now</span>
+    </div>
+    <div class="split">
+      <div class="prose">
+        <p class="lede">The question is no longer speculative. Research agents now synthesize literature, propose hypotheses that can be tested in laboratories, and run <em>closed research loops</em> — proposing an idea, implementing it, running an experiment, evaluating the result, and choosing the next attempt.</p>
+        <p>Self-improvement also reaches training: models generate practice data, rewards, curricula, and critiques through self-play, self-reward, and verifiable task generation, and agentic data systems improve the datasets they create. This broadens AI-for-AI to data curation, pretraining, midtraining, post-training, and systems optimization. Yet full recursive self-improvement remains unproven — evaluation must expose overfitting, hidden human labor, and reward tampering.</p>
+        <p>ARRSI fits AACL-IJCNLP because language is how research agents form hypotheses, retrieve multilingual evidence, call tools, critique claims, and explain results. The workshop brings together NLP, agentic systems, AI for Science, AI for AI, evaluation, and governance to establish definitions, benchmarks, reporting standards, and safety boundaries for systems that do not merely produce research-like text, but accumulate auditable evidence and use it to become better researchers.</p>
+      </div>
+      <aside class="sidenote">
+        <p><strong>What ARRSI will produce:</strong> a shared vocabulary, a reporting checklist, a benchmark and infrastructure map, and a research agenda for the whole feedback loop — from a single experiment to the system that designs the next one.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= call for papers ======================= -->
+<section class="block" id="cfp">
+  <div class="container">
+    <div class="block-head">
+      <span class="no">2</span>
+      <h2>Call for Papers</h2>
+      <span class="aside-note">Empirical · theoretical · systems · dataset · benchmark · survey · position</span>
+    </div>
+    <div class="prose">
+      <p>We invite empirical, theoretical, systems, dataset, benchmark, survey, and position papers on the following topics.</p>
+    </div>
+    <div class="topics">
+      <div class="topic"><h3><span class="t-no">T1</span>RSI for Harness &amp; Loop Engineering</h3><p>Prompts, context, memory, tools, workflows, evaluators, and harness code.</p></div>
+      <div class="topic"><h3><span class="t-no">T2</span>Autonomous Research</h3><p>Literature synthesis, hypotheses, experiments, analysis, replication, peer review, and research taste.</p></div>
+      <div class="topic"><h3><span class="t-no">T3</span>AI for Science</h3><p>Mathematics, physics, chemistry, biology, medicine, and materials science.</p></div>
+      <div class="topic"><h3><span class="t-no">T4</span>AI for AI</h3><p>Models, agents, architectures, objectives, optimizers, kernels, compilers, training, inference, alignment, and evaluation.</p></div>
+      <div class="topic"><h3><span class="t-no">T5</span>Autonomous Data Engineering</h3><p>Discovery, collection, cleaning, filtering, annotation, synthesis, provenance, and quality control.</p></div>
+      <div class="topic"><h3><span class="t-no">T6</span>Automated Training &amp; Self-Training</h3><p>Pretraining, midtraining, post-training, self-play, rewards, curricula, and continual learning.</p></div>
+      <div class="topic"><h3><span class="t-no">T7</span>RSI for Coding &amp; General Agents</h3><p>Coding and general agents, plus finance, healthcare, medicine, education, and other domains.</p></div>
+      <div class="topic"><h3><span class="t-no">T8</span>Infrastructure &amp; Evaluation</h3><p>Experiment managers, sandboxes, verifiers, provenance, checkpoints, rollback, compute accounting, benchmarks, and contamination control.</p></div>
+      <div class="topic"><h3><span class="t-no">T9</span>Safety &amp; Governance</h3><p>Validity, attribution, negative results, reward hacking, oversight, security, dual use, and human control.</p></div>
+    </div>
+
+    <div class="split" style="margin-top: 2.4rem;">
+      <div>
+        <table class="tabular">
+          <caption>All deadlines are 23:59, anywhere on Earth. Dates will be announced together with the call for papers.</caption>
+          <thead><tr><th>Important dates</th><th style="text-align:right"></th></tr></thead>
+          <tbody>
+            <tr><td>Call for papers released</td><td class="mono tba" style="text-align:right">TBA</td></tr>
+            <tr><td>Submission deadline</td><td class="mono tba" style="text-align:right">TBA</td></tr>
+            <tr><td>Notification of acceptance</td><td class="mono tba" style="text-align:right">TBA</td></tr>
+            <tr><td>Camera-ready papers due</td><td class="mono tba" style="text-align:right">TBA</td></tr>
+            <tr class="hl"><td>Workshop day</td><td class="mono" style="text-align:right">Nov 9 or 10, 2026</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <aside>
+        <div class="sidenote">
+          <p><strong>Format.</strong> Long papers up to 8 pages and short, position, or resource papers up to 4 pages, excluding references, in *ACL format. Each paper receives three double-blind reviews on <strong>OpenReview</strong>. All accepted papers present posters; 4–6 receive talk slots.</p>
+          <p style="margin-top:0.8rem"><strong>Reporting standards.</strong> Authors will report artifacts, compute, human intervention, failed runs, evaluation budgets, and the exact component improved — separating scientific progress from opaque optimization.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= schedule ======================= -->
+<section class="block" id="schedule">
+  <div class="container">
+    <div class="block-head">
+      <span class="no">3</span>
+      <h2>Schedule</h2>
+      <span class="aside-note">Provisional · one day · breaks follow the conference</span>
+    </div>
+    <div class="split">
+      <div>
+        <table class="tabular">
+          <caption>Provisional program; the final schedule will follow the AACL-IJCNLP 2026 conference timetable.</caption>
+          <thead><tr><th style="width:7.5rem">Time</th><th>Session</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">09:00</td><td>Opening and invited talks</td></tr>
+            <tr><td class="mono">11:00</td><td>Contributed talks, posters, and demonstrations</td></tr>
+            <tr><td class="mono">14:00</td><td>Further contributed and invited talks</td></tr>
+            <tr><td class="mono">16:00</td><td>Evaluation and reproducibility clinic</td></tr>
+            <tr><td class="mono">17:00</td><td>Synthesis: vocabulary, checklist, and research agenda</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <aside class="sidenote" id="clinic">
+        <p><strong>The clinic, not a shared task.</strong> The first edition will not run a shared task. Instead, an evaluation and reproducibility clinic for 20–30 participants will compare benchmark designs and draft a future task specification — once the community agrees on how to measure autonomy and self-improvement.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= speakers ======================= -->
+<section class="block" id="speakers">
+  <div class="container">
+    <div class="block-head">
+      <span class="no">4</span>
+      <h2>Invited Speakers</h2>
+    </div>
+    <div class="tba-panel">
+      <p class="big">To be announced.</p>
+      <p>We are inviting speakers across harness engineering, scientific agents, AI for Science, and the measurement and governance of recursive self-improvement. Confirmed speakers will appear here.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= organizers ======================= -->
+<section class="block" id="organizers">
+  <div class="container">
+    <div class="block-head">
+      <span class="no">5</span>
+      <h2>Organizers</h2>
+      <span class="aside-note">General &amp; program chairs, proceedings, website, D&amp;I, logistics</span>
+    </div>
+    <div class="people">
+      <a class="person" data-slug="yuxuan-zhang" href="https://yuxuan.world/"><span class="photo"><img src="assets/people/yuxuan-zhang.jpg" alt="Portrait of Yuxuan Zhang" loading="lazy" width="480" height="480"></span><h3>Yuxuan Zhang<span class="ext">↗</span></h3><p class="aff">University of British Columbia · Vector Institute</p></a>
+      <a class="person" data-slug="kelsey-allen" href="https://k-r-allen.github.io/"><span class="photo"><img src="assets/people/kelsey-allen.jpg" alt="Portrait of Kelsey Allen" loading="lazy" width="480" height="480"></span><h3>Kelsey Allen<span class="ext">↗</span></h3><p class="aff">University of British Columbia · Vector Institute</p></a>
+      <a class="person" data-slug="yixuan-he" href="https://sherylhyx.github.io/"><span class="photo"><img src="assets/people/yixuan-he.jpg" alt="Portrait of Yixuan He" loading="lazy" width="480" height="480"></span><h3>Yixuan He<span class="ext">↗</span></h3><p class="aff">Arizona State University</p></a>
+      <a class="person" data-slug="greg-durrett" href="https://gregdurrett.github.io/"><span class="photo"><img src="assets/people/greg-durrett.jpg" alt="Portrait of Greg Durrett" loading="lazy" width="480" height="480"></span><h3>Greg Durrett<span class="ext">↗</span></h3><p class="aff">New York University</p></a>
+      <a class="person" data-slug="peter-west" href="https://peterwestai.notion.site/"><span class="photo"><img src="assets/people/peter-west.jpg" alt="Portrait of Peter West" loading="lazy" width="480" height="480"></span><h3>Peter West<span class="ext">↗</span></h3><p class="aff">University of British Columbia</p></a>
+      <a class="person" data-slug="yizhi-li" href="https://yizhilll.github.io/"><span class="photo"><img src="assets/people/yizhi-li.jpg" alt="Portrait of Yizhi Li" loading="lazy" width="480" height="480"></span><h3>Yizhi Li<span class="ext">↗</span></h3><p class="aff">University of Manchester · IQuest Research, UbiQuant</p></a>
+      <a class="person" data-slug="rui-meng" href="https://memray.me/"><span class="photo"><img src="assets/people/rui-meng.jpg" alt="Portrait of Rui Meng" loading="lazy" width="480" height="480"></span><h3>Rui Meng<span class="ext">↗</span></h3><p class="aff">Google AI Research</p></a>
+      <a class="person" data-slug="dingmin-wang" href="https://www.dingmin.wang/"><span class="photo"><img src="assets/people/dingmin-wang.jpg" alt="Portrait of Dingmin Wang" loading="lazy" width="480" height="480"></span><h3>Dingmin Wang<span class="ext">↗</span></h3><p class="aff">Amazon AWS AI Lab</p></a>
+      <a class="person" data-slug="hao-zhang" href="https://haozhang534.github.io/"><span class="photo"><img src="assets/people/hao-zhang.jpg" alt="Portrait of Hao Zhang" loading="lazy" width="480" height="480"></span><h3>Hao Zhang<span class="ext">↗</span></h3><p class="aff">NVIDIA Research</p></a>
+      <a class="person" data-slug="wenhu-chen" href="https://wenhuchen.github.io/"><span class="photo"><img src="assets/people/wenhu-chen.jpg" alt="Portrait of Wenhu Chen" loading="lazy" width="480" height="480"></span><h3>Wenhu Chen<span class="ext">↗</span></h3><p class="aff">Meta Superintelligence Labs · University of Waterloo</p></a>
+      <a class="person" data-slug="mingchen-zhuge" href="https://metauto.ai/"><span class="photo"><img src="assets/people/mingchen-zhuge.jpg" alt="Portrait of Mingchen Zhuge" loading="lazy" width="480" height="480"></span><h3>Mingchen Zhuge<span class="ext">↗</span></h3><p class="aff">Recursive Superintelligence</p></a>
+      <a class="person" data-slug="jian-yang" href="https://csjianyang.github.io/"><span class="photo"><img src="assets/people/jian-yang.jpg" alt="Portrait of Jian Yang" loading="lazy" width="480" height="480"></span><h3>Jian Yang<span class="ext">↗</span></h3><p class="aff">Beihang University · M-A-P</p></a>
+      <a class="person" data-slug="xianglong-liu" href="https://xlliu-beihang.github.io/"><span class="photo"><img src="assets/people/xianglong-liu.jpg" alt="Portrait of Xianglong Liu" loading="lazy" width="480" height="480"></span><h3>Xianglong Liu<span class="ext">↗</span></h3><p class="aff">Beihang University</p></a>
+      <a class="person" data-slug="ming-zhou" href="https://www.langboat.com/en/about/resume"><span class="photo"><img src="assets/people/ming-zhou.jpg" alt="Portrait of Ming Zhou" loading="lazy" width="480" height="480"></span><h3>Ming Zhou<span class="ext">↗</span></h3><p class="aff">Langboat</p></a>
+      <a class="person" data-slug="hanqi-yan" href="https://hanqi-qi.github.io/"><span class="photo"><img src="assets/people/hanqi-yan.jpg" alt="Portrait of Hanqi Yan" loading="lazy" width="480" height="480"></span><h3>Hanqi Yan<span class="ext">↗</span></h3><p class="aff">King&rsquo;s College London</p></a>
+    </div>
+    <p class="people-note">The team spans North America, Europe, the Middle East, and China. Conflicted organizers take no part in assignments, discussion, or decisions.</p>
+  </div>
+</section>
+
+<!-- ======================= advisory board ======================= -->
+<section class="block" id="advisory">
+  <div class="container">
+    <div class="block-head">
+      <span class="no">6</span>
+      <h2>Advisory Board</h2>
+    </div>
+    <div class="people compact">
+      <a class="person" data-slug="robin-ding" href="https://robin-y-ding-columbia.github.io/"><span class="photo"><img src="assets/people/robin-ding.jpg" alt="Portrait of Robin Ding" loading="lazy" width="480" height="480"></span><h3>Robin Ding<span class="ext">↗</span></h3><p class="aff">UCLA</p></a>
+      <a class="person" data-slug="jianwen-xie" href="https://scholar.google.com/citations?user=O3p4CIQAAAAJ"><span class="photo"><img src="assets/people/jianwen-xie.jpg" alt="Portrait of Jianwen Xie" loading="lazy" width="480" height="480"></span><h3>Jianwen Xie<span class="ext">↗</span></h3><p class="aff">UCLA</p></a>
+      <a class="person" data-slug="xingwei-qu" href="https://scholar.google.com/citations?user=hty-MWIAAAAJ"><span class="photo"><img src="assets/people/xingwei-qu.jpg" alt="Portrait of Xingwei Qu" loading="lazy" width="480" height="480"></span><h3>Xingwei Qu<span class="ext">↗</span></h3><p class="aff">University of Manchester</p></a>
+      <a class="person" data-slug="zhuofeng-li" href="https://zhuofeng-li.github.io/"><span class="photo"><img src="assets/people/zhuofeng-li.jpg" alt="Portrait of Zhuofeng Li" loading="lazy" width="480" height="480"></span><h3>Zhuofeng Li<span class="ext">↗</span></h3><p class="aff">Texas A&amp;M University</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= program committee ======================= -->
+<section class="block" id="pc">
+  <div class="container">
+    <div class="block-head">
+      <span class="no">7</span>
+      <h2>Program Committee</h2>
+    </div>
+    <div class="prose">
+      <p>Reviewing runs on OpenReview with double-blind submission, discussion, and decisions. We target at least 60 reviewers so that every submission receives three reviews while individual loads stay at three papers or fewer. The reviewer list will be published together with the call for papers. Reviewers assess evidence traceability, controls, reproducibility, resources, safety, and limitations; undisclosed AI-generated reviews are prohibited.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= footer ======================= -->
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>Contact</h2>
+        <p>Yuxuan Zhang<br><a href="mailto:reacher@cs.ubc.ca">reacher@cs.ubc.ca</a></p>
+      </div>
+      <div>
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://github.com/ar-rsi" rel="noopener">GitHub — github.com/ar-rsi</a></li>
+          <li>OpenReview — <em>opens with the CFP</em></li>
+          <li>AACL-IJCNLP 2026 — Hengqin, China</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Accessibility &amp; Inclusion</h2>
+        <p>The CFP welcomes multilingual and low-resource work and applications for underrepresented communities. On site we provide color-safe materials, captions, accessible seating, and asynchronous questions, prioritizing participants with disabilities and limited resources.</p>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>ARRSI 2026 · First edition</span>
+      <span>Hand-set in STIX Two Text &amp; IBM Plex Mono</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
