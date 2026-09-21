@@ -146,7 +146,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; text-decoratio
 }
 .hero-venue strong { color: var(--ink); font-style: normal; font-weight: 600; }
 
-.cta-row { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 2.4rem; }
+.cta-row { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.4rem; }
 .btn {
   display: inline-block;
   font-family: var(--mono); font-size: 0.73rem; font-weight: 500;
@@ -353,4 +353,12 @@ footer { margin-top: clamp(3rem, 6vw, 5rem); border-top: 2px solid var(--ink); b
 }
 
 /* Submission opening announcement */
-.submission-announcement { margin-top: 1.25rem; padding: 1rem 1.15rem; background: var(--wash); border-left: 3px solid var(--accent); }
+.submission-announcement {
+  margin: 1.5rem 0 1.75rem;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  background: var(--wash);
+  border-left: 3px solid var(--accent);
+}
+.announcement-title { display: block; font-size: 1.15em; line-height: 1.4; }
+.submission-announcement p { margin-top: 0.6rem; }
+.submission-announcement .announcement-deadline { margin-top: 1rem; }
