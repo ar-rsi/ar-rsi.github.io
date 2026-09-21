@@ -351,3 +351,6 @@ footer { margin-top: clamp(3rem, 6vw, 5rem); border-top: 2px solid var(--ink); b
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Submission opening announcement */
+.submission-announcement { margin-top: 1.25rem; padding: 1rem 1.15rem; background: var(--wash); border-left: 3px solid var(--accent); }
