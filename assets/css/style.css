@@ -263,6 +263,9 @@ section.block:last-of-type { padding-bottom: clamp(2.6rem, 5.5vw, 4rem); }
 .tabular .tba { color: var(--ink-faint); font-style: italic; }
 .tabular .hl td { background: var(--wash); }
 .tabular .hl td:first-child { box-shadow: inset 2px 0 0 var(--accent); padding-left: 0.75rem; }
+.program-table { overflow-x: auto; }
+.program-table .tabular { min-width: 580px; }
+.program-table .mono { white-space: nowrap; }
 
 /* ---------- speakers ---------- */
 .tba-panel {
@@ -338,6 +341,7 @@ footer { margin-top: clamp(3rem, 6vw, 5rem); border-top: 2px solid var(--ink); b
   .people, .people.compact { grid-template-columns: repeat(2, 1fr); }
   .masthead nav { gap: 0.8rem; }
   .masthead nav a:nth-child(n+5) { display: none; }
+  .masthead nav a[href="#code-of-conduct"] { display: inline; }
   .footer-grid { grid-template-columns: 1fr; gap: 1.8rem; }
   .block-head .aside-note { display: none; }
 }
